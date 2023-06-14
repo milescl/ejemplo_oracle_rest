@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 export default function Home() {
   const [ products, setProducts ] = useState([]);
   useEffect(()=>{
-      fetch('https://g0088ae829caf7c-bddfzas2023.adb.sa-santiago-1.oraclecloudapps.com/ords/exp3/products/')
+      fetch('https://g0088ae829caf-bddfzas2023.adb.sa-santiago-1.oraclecloudapps.com/ords/exp3/products/')
       .then(res => res.json())
       .then (data => setProducts(data))
   },[]);
